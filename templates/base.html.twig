@@ -41,7 +41,7 @@
 
 
     </head>
-    <body class="theme-blue">
+    <body class="theme-green">
 
         <!-- Page Loader -->
         <div class="page-loader-wrapper">
@@ -106,8 +106,8 @@
                                     <li>
                                         <a href="#Telas" class="has-arrow"><i class="fa fa-database"></i><span>Forms</span></a>
                                         <ul>
-                                            <li><a href="{{ path('cliente') }}">Clientes</a></li>
-                                            <li><a href="{{ path('transportadora') }}">Transportadoras</a></li>
+                                            <li><a href="{{ path('customer') }}">Customer Form</a></li>
+                                            <li><a href="{{ path('prospect_client') }}">Prospect Client Form</a></li>
                                         </ul>
                                     </li>
                                     
@@ -168,6 +168,7 @@
 
                 $(document).ready(function(){
 
+                    /*
                     getNotifications();
 
                     setInterval(function(){ 
@@ -175,11 +176,12 @@
                         }, 
                         (1000 * 60 * 5) //5 minutos
                     );
-
+                    */
                 });
 
+                /*
                 function getNotifications() {
-                    $.post("{{ path('notification_get') }}",
+                    $.post("{#{ path('notification_get') }#}",
                         {
                             
                         }, 
@@ -190,6 +192,7 @@
                         }
                     );
                 }
+                */
 
                 //SweetAlert
                 function showAlert(titulo, msg, tipo) {

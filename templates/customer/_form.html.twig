@@ -1,0 +1,137 @@
+{#{ form_start(form) }#}
+<form name="form_company" method="post">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                        <b>Thank you for considering us to be your service provider.</b> <br>
+                        So that we provide you with best service ever, please first complete the new Customer Registration Form below. <br>
+                        The collected customer registration data are kept strictly confidential. Only fully completed forms are accepted. <br><br>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label for="company_name">Company Name*</label>
+                        <input type="text" id="company_name" name="form_company[company_name]" maxlength="255" class="form-control">
+                    </div>
+                    {#{ form_row(form.codigo) }#}
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="first_name">First Name*</label>
+                        <input type="text" id="first_name" name="form_company[first_name]" maxlength="255" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="last_name">Last Name*</label>
+                        <input type="text" id="last_name" name="form_company[last_name]" maxlength="255" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label for="street_address">Street Address*</label>
+                        <input type="text" id="street_address" name="form_company[street_address]" maxlength="255" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="city">City*</label>
+                        <input type="text" id="city" name="form_company[city]" maxlength="255" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="state_province">State / Province*</label>
+                        <input type="text" id="state_province" name="form_company[state_province]" maxlength="255" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="form-group">
+                        <label for="zip_code">Postal / Zip Code*</label>
+                        <input type="text" id="zip_code" name="form_company[zip_code]" maxlength="255" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="phone">Phone Number*</label>
+                        <input type="text" id="phone" name="form_company[phone]" maxlength="255" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="email">Email*</label>
+                        <input type="text" id="email" name="form_company[email]" maxlength="255" class="form-control">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label for="need">What do you need?*</label>
+                        <textarea rows="5" id="need" name="form_company[need]" maxlength="255" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label for="other_information">Any other information you think we should know about?</label>
+                        <textarea rows="2" id="other_information" name="form_company[other_information]" maxlength="255" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <label>How did you hear about us?*</label>
+
+                    <div class="form-group">                        
+                        <input type="radio" id="newspaper" name="form_company[income]" value="newspaper" onclick="$('#other_description').hide(); $('#other_description').val('');">
+                        <label for="newspaper">Newspaper</label><br>
+
+                        <input type="radio" id="internet" name="form_company[income]" value="internet" onclick="$('#other_description').hide(); $('#other_description').val('');">
+                        <label for="internet">Internet</label><br>
+
+                        <input type="radio" id="magazine" name="form_company[income]" value="magazine" onclick="$('#other_description').hide();  $('#other_description').val('');">
+                        <label for="magazine">Magazine</label><br>
+
+                        <input type="radio" id="other" name="form_company[income]" value="other" onclick="$('#other_description').show(); $('#other_description').select()">
+                        <label for="other">Other (Please Specify)</label>
+                        <input type="text" id="other_description" name="form_company[other_description]" class="m-l-5 form-control" style="display: none;">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label for="suggestions">Suggestions if any for further improvement</label>
+                        <textarea rows="2" id="suggestions" name="form_company[suggestions]" maxlength="255" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p><button class="btn btn-lg btn-block btn-primary">Save</button></p>
+{#{ form_end(form) }#}
