@@ -1,0 +1,201 @@
+{#{ form_start(form) }#}
+<form name="form_client" method="post">
+    <div class="panel panel-default">
+        <div class="panel-body">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    Select some options for your new area:
+                </div>
+            </div>
+
+            <div class="row pt-3">
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <input type="checkbox" id="pool" name="form_client[options]" value="pool">
+                        <label for="pool">Pool</label><br>
+
+                        <input type="checkbox" id="hottube" name="form_client[options]" value="hottube">
+                        <label for="hottube">Hot Tube (SPA)</label><br>
+
+                        <input type="checkbox" id="heater" name="form_client[options]" value="heater">
+                        <label for="heater">Heater</label><br>
+
+                        <input type="checkbox" id="elevated_pool" name="form_client[options]" value="elevated_pool">
+                        <label for="elevated_pool">Elevated Pool</label><br>
+
+                        <input type="checkbox" id="in_ground_pool" name="form_client[options]" value="in_ground_pool">
+                        <label for="in_ground_pool">In Ground Pool</label><br>
+
+                        <input type="checkbox" id="light_plan_pool" name="form_client[options]" value="light_plan_pool">
+                        <label for="light_plan_pool">Light Plan (Pool)</label><br>
+
+                        <input type="checkbox" id="benches" name="form_client[options]" value="benches">
+                        <label for="benches">Benches</label><br>
+
+                        <input type="checkbox" id="sun_ledge" name="form_client[options]" value="sun_ledge">
+                        <label for="sun_ledge">Sun Ledge</label><br>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <input type="checkbox" id="infinity_edge" name="form_client[options]" value="infinity_edge">
+                        <label for="infinity_edge">Infinity Edge</label><br>
+
+                        <input type="checkbox" id="electric_robotic_cleaner" name="form_client[options]" value="electric_robotic_cleaner">
+                        <label for="electric_robotic_cleaner">Electric Robotic Cleaner</label><br>
+
+                        <input type="checkbox" id="swim_jets" name="form_client[options]" value="swim_jets">
+                        <label for="swim_jets">Swim Jets</label><br>
+
+                        <input type="checkbox" id="deck_jets" name="form_client[options]" value="deck_jets">
+                        <label for="deck_jets">Deck Jets</label><br>
+
+                        <input type="checkbox" id="water_fall" name="form_client[options]" value="water_fall">
+                        <label for="water_fall">Water Fall</label><br>
+
+                        <input type="checkbox" id="outdoor_living_space" name="form_client[options]" value="outdoor_living_space">
+                        <label for="outdoor_living_space">Outdoor Living Space</label><br>
+
+                        <input type="checkbox" id="outdoor_bathroom" name="form_client[options]" value="outdoor_bathroom">
+                        <label for="outdoor_bathroom">Outdoor Bathroom</label><br>
+
+                        <input type="checkbox" id="fire_pit" name="form_client[options]" value="fire_pit">
+                        <label for="fire_pit">Fire Pit</label><br>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <input type="checkbox" id="grill_area" name="form_client[options]" value="grill_area">
+                        <label for="grill_area">Grill Area</label><br>
+
+                        <input type="checkbox" id="decking_concrete" name="form_client[options]" value="decking_concrete">
+                        <label for="decking_concrete">Decking Concrete</label><br>
+
+                        <input type="checkbox" id="decking_wood" name="form_client[options]" value="decking_wood">
+                        <label for="decking_wood">Decking Wood</label><br>
+
+                        <input type="checkbox" id="decking_travertino" name="form_client[options]" value="decking_travertino">
+                        <label for="decking_travertino">Decking Travertino</label><br>
+
+                        <input type="checkbox" id="fire_feature" name="form_client[options]" value="fire_feature">
+                        <label for="fire_feature">Fire Feature</label><br>
+
+                        <input type="checkbox" id="decorative_hall" name="form_client[options]" value="decorative_hall">
+                        <label for="decorative_hall">Decorative Hall</label><br>
+
+                        <input type="checkbox" id="automatic_cover" name="form_client[options]" value="automatic_cover">
+                        <label for="automatic_cover">Automatic Cover</label><br>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="form-group">
+                        <input type="checkbox" id="pergola" name="form_client[options]" value="pergola">
+                        <label for="pergola">Pergola</label><br>
+
+                        <input type="checkbox" id="landscaping" name="form_client[options]" value="landscaping">
+                        <label for="landscaping">Landscaping</label><br>
+
+                        <input type="checkbox" id="light_plan_landscaping" name="form_client[options]" value="light_plan_landscaping">
+                        <label for="light_plan_landscaping">Light Plan (Landscaping)</label><br>
+
+                        <input type="checkbox" id="fencing" name="form_client[options]" value="fencing">
+                        <label for="fencing">Fencing</label><br>
+
+                        <input type="checkbox" id="other" name="form_client[options]" value="other">
+                        <label for="other">Other</label><br>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <input type="checkbox" id="property_survey" name="form_client[survey]" value="property_survey">
+                        <label for="property_survey">Property Survey</label><br>
+
+                        <input type="checkbox" id="tree_survey" name="form_client[survey]" value="tree_survey">
+                        <label for="tree_survey">Tree Survey</label><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="budget">Planned Budget</label>
+                        <input type="text" id="budget" name="form_client[budget]" maxlength="255" class="form-control">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <strong>Finance</strong><br><br>
+                        <input type="radio" id="finance_yes" name="form_client[finance]" value="finance_yes" class="ml-1">
+                        <label for="finance_yes">Yes</label>
+
+                        <input type="radio" id="finance_no" name="form_client[finance]" value="finance_no">
+                        <label for="finance_no">No</label><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="pool_width">Pool Size</label>
+                        <div class="input-group">
+                            <input type="text" id="pool_width" name="form_client[pool_width]" maxlength="255" class="form-control" placeholder="width">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">X</span>
+                            </div>
+                            <input type="text" id="pool_height" name="form_client[pool_height]" maxlength="255" class="form-control" placeholder="height">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="pool_width">Depth</label>
+                        <div class="input-group">
+                            <input type="text" id="pool_width" name="form_client[pool_width]" maxlength="255" class="form-control" placeholder="shallow">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">-</span>
+                            </div>
+                            <input type="text" id="pool_height" name="form_client[pool_height]" maxlength="255" class="form-control" placeholder="deep">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <label for="spa_sit_width">Spa Size (Number of people seated)</label>
+                        <div class="input-group">
+                            <input type="text" id="spa_sit_width" name="form_client[spa_sit_width]" maxlength="255" class="form-control" placeholder="width">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">X</span>
+                            </div>
+                            <input type="text" id="spa_sit_height" name="form_client[spa_sit_height]" maxlength="255" class="form-control" placeholder="height">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <label for="notes">Notes</label>
+                        <textarea rows="3" id="notes" name="form_client[notes]" maxlength="255" class="form-control"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p><button class="btn btn-lg btn-block btn-primary">Save</button></p>
+{#{ form_end(form) }#}

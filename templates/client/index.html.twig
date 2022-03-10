@@ -1,0 +1,100 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Prospect Cliente Form{% endblock %}
+
+{% block stylesheets %}
+
+    {{ parent() }}
+
+{% endblock %}
+
+{% block body_header %}
+
+    <div class="row">
+        <div class="col-lg-6 col-md-8 col-sm-12">
+            <h2><a href="javascript:void(0);" class="btn btn-xs btn-link btn-toggle-fullwidth"><i class="fa fa-arrow-left"></i></a> Prospect Cliente Form</h2>
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ path('crm_index') }}"><i class="icon-home"></i></a></li>                            
+                <li class="breadcrumb-item">Forms</li>
+                <li class="breadcrumb-item active">Prospect Cliente Form</li>
+            </ul>
+        </div> 
+    </div>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="row clearfix">
+        
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="body">
+                    <p>
+                        <b>Full name: </b>  full name here</br>
+                        <b>Phone number: </b>  phone number here</br>
+                        <b>E-mail: </b>  email here</br>
+                        <b>Address: </b>  address here</br>
+                    </p>
+                    <!--
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label>Full name</label>
+                                <input type="text" class="form-control" readonly="readonly">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label>Phone number</label>
+                                <input type="text" class="form-control" readonly="readonly">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label>E-mail</label>
+                                <input type="text" class="form-control" readonly="readonly">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label>Address</label>
+                                <input type="text" class="form-control" readonly="readonly">
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="body">
+                    {{ include('client/_form.html.twig') }}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+{% endblock %}
+
+
+{% block javascripts %}
+
+    {{ parent() }}
+
+    <script>
+
+    $(document).ready(function(){
+
+    
+
+    });
+
+    </script>
+
+{% endblock %}

@@ -28,6 +28,6 @@ class CRMController extends BaseController
      */
     public function prospectClient(): Response
     {
-        return $this->render('index.html.twig');
+        return $this->render('client/index.html.twig');
     }
 }
