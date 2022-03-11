@@ -105,8 +105,9 @@
                         <input type="checkbox" id="fencing" name="form_client[options]" value="fencing">
                         <label for="fencing">Fencing</label><br>
 
-                        <input type="checkbox" id="other" name="form_client[options]" value="other">
+                        <input type="checkbox" id="other" name="form_client[options]" value="other" onclick="$('#other_option').toggle().val('').select()">
                         <label for="other">Other</label><br>
+                        <input type="text" id="other_option" name="form_company[other_option]" class="m-l-5 form-control" style="display: none;">
                     </div>
                 </div>
             </div>
